@@ -221,7 +221,7 @@ The application scenario in this paper is the community network, where each node
 Each node has at least a certain number of neighbors with good link connectivity. Five steps:
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.08]{Figure1.png}
+\includegraphics[scale=0.08]{imgs/Figure1.png}
 \column{0.5\textwidth}
 \begin{enumerate}
     \item[1.] Once the content dissemination task starts, the edge server probes all neighbor nodes for file status.
@@ -235,7 +235,7 @@ Each node has at least a certain number of neighbors with good link connectivity
 \framesubtitle{Decentralized Content Dissemination Algorithm (DCDM)}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.08]{Figure1.png}
+\includegraphics[scale=0.08]{imgs/Figure1.png}
 \column{0.5\textwidth}
 \begin{enumerate}
     \item[4.] A content caching notification command will be sent to neighbors selected by the node selection algorithm.
@@ -249,9 +249,8 @@ Each node has at least a certain number of neighbors with good link connectivity
 \framesubtitle{Decentralized Content Dissemination Algorithm (DCDM)}
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.6\textwidth]{Figure2.png}
+    \includegraphics[width=0.6\textwidth]{imgs/Figure2.png}
     \caption{Network Diagram}
-    \label{fig:2}
 \end{figure}
 \end{frame}
 
@@ -259,7 +258,7 @@ Each node has at least a certain number of neighbors with good link connectivity
 \framesubtitle{Decentralized Content Dissemination Algorithm (DCDM)}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.07]{Figure2.png}
+\includegraphics[scale=0.07]{imgs/Figure2.png}
 \column{0.5\textwidth}
 \begin{itemize}
     \item Each node has a certain number of neighbors, some of which have already cached content. 
@@ -307,9 +306,8 @@ This new weighting scheme does not only evaluate the topological position of a n
 \framesubtitle{Decentralized Weighted PageRank-style Node Selection Algorithm - \textcolor{red}{Parameters Approximation}}
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\textwidth]{Fig3.png}
+    \includegraphics[width=0.7\textwidth]{imgs/Fig3.png}
     \caption{Demonstration of the light-weight merging phase}
-    \label{fig:3}
 \end{figure}
 \end{frame}
 
@@ -317,7 +315,7 @@ This new weighting scheme does not only evaluate the topological position of a n
 \framesubtitle{Decentralized Weighted PageRank-style Node Selection Algorithm - \textcolor{red}{Parameters Approximation}}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.048]{Fig3.png}
+\includegraphics[scale=0.048]{imgs/Fig3.png}
 \column{0.5\textwidth}
 \begin{itemize}
 \item Starting with the local graph $G$ of a node, the node first extends $G$ by adding a special node $W$, called world node, which represents all nodes in the network that do not belong to $G$.
@@ -330,7 +328,7 @@ This new weighting scheme does not only evaluate the topological position of a n
 \framesubtitle{Decentralized Weighted PageRank-style Node Selection Algorithm - \textcolor{red}{Parameters Approximation}}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.048]{Fig3.png}
+\includegraphics[scale=0.048]{imgs/Fig3.png}
 \column{0.5\textwidth}
 \begin{itemize}
     \item The graphs in figure (a) (b) represent the original local graphs of nodes A and B before their encounter. The graphs in figure (c) (d) represent the updated ones after the encounter. 
@@ -343,7 +341,7 @@ This new weighting scheme does not only evaluate the topological position of a n
 \framesubtitle{Decentralized Weighted PageRank-style Node Selection Algorithm - \textcolor{red}{Parameters Approximation}}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.048]{Fig3.png}
+\includegraphics[scale=0.048]{imgs/Fig3.png}
 \column{0.5\textwidth}
 \begin{itemize}
     \item At a meeting, instead of merging the graphs and world nodes, only relevant information received from the other node into the local world node will be added. 
@@ -356,7 +354,7 @@ This new weighting scheme does not only evaluate the topological position of a n
 \framesubtitle{Decentralized Weighted PageRank-style Node Selection Algorithm - \textcolor{red}{Parameters Approximation}}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.048]{Fig3.png}
+\includegraphics[scale=0.048]{imgs/Fig3.png}
 \column{0.5\textwidth}
 \begin{itemize}
     \item Firstly, updating node $A$. Obviously, we need to find links in node $B$ that points to the vertex in the vertex set of node $A$: 
@@ -375,7 +373,7 @@ This new weighting scheme does not only evaluate the topological position of a n
 \framesubtitle{Decentralized Weighted PageRank-style Node Selection Algorithm - \textcolor{red}{Parameters Approximation}}
 \begin{columns}
 \column{0.5\textwidth}
-\includegraphics[scale=0.048]{Fig3.png}
+\includegraphics[scale=0.048]{imgs/Fig3.png}
 \column{0.5\textwidth}
 \begin{itemize}
    \item Secondly, updating node $B$. Similarly, we need to find links in node $A$ that points to the vertex in the vertex set of node $B$: \[{B\rightarrow C,J\rightarrow C,A\rightarrow E}\] Then these links are added to the local graph of node $B$. The updated node $B$ is shown in figure 3(d).
@@ -442,7 +440,6 @@ This new weighting scheme does not only evaluate the topological position of a n
 \Xhline{1.5pt}     
 \end{tabularx}
 \caption{Simulation Hyper-parameters}
-\label{tab:my_label}
 \end{table}
 \end{frame}
 
@@ -486,7 +483,7 @@ It means the average latency of users accessing content.
 \column{0.5\textwidth}
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figure4.png}
+    \includegraphics[width=0.9\textwidth]{imgs/Figure4.png}
     \caption{The percentage of nodes that meet the required coverage requirement}
 \end{figure}
 \column{0.5\textwidth}
@@ -500,7 +497,7 @@ Since the decentralized PageRank approximation introduces a certain degree of ra
 \column{0.5\textwidth}
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figure5.png}
+    \includegraphics[width=0.9\textwidth]{imgs/Figure5.png}
     \caption{The dissemination makespan}
 \end{figure}
 \column{0.5\textwidth}
@@ -514,11 +511,11 @@ It can be seen that when the network size is 2000, the makespan of weighted Page
 \column{0.5\textwidth}
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figure6.png}
+    \includegraphics[width=0.9\textwidth]{imgs/Figure6.png}
     \caption{The mean of coverage}
 \end{figure}
 \column{0.5\textwidth}
-Figure on the left shows a comparison of the mean of coverage under the condition of a fixed number of quotas. As the number of quotas is limited, the higher the mean of coverage rate, the better. The reason is that when some of these neighbors fail to provide services normally, nodes with higher average coverage rate have higher fault tolerance. In figure 6, the weighted PageRank approach achieves the best performance regarding the mean of coverage, as there are more nodes reaching the coverage rate requirement.
+imgs/Figure on the left shows a comparison of the mean of coverage under the condition of a fixed number of quotas. As the number of quotas is limited, the higher the mean of coverage rate, the better. The reason is that when some of these neighbors fail to provide services normally, nodes with higher average coverage rate have higher fault tolerance. In figure 6, the weighted PageRank approach achieves the best performance regarding the mean of coverage, as there are more nodes reaching the coverage rate requirement.
 \end{columns}
 \end{frame}
 
@@ -528,7 +525,7 @@ Figure on the left shows a comparison of the mean of coverage under the conditio
 \column{0.5\textwidth}
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{Figure7.png}
+    \includegraphics[width=0.9\textwidth]{imgs/Figure7.png}
     \caption{The average latency}
 \end{figure}
 \column{0.5\textwidth}
@@ -582,7 +579,7 @@ Future work will mainly focus on two aspects:
 \begin{frame}{Bonus}
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{journal.png}
+    \includegraphics[width=0.9\textwidth]{imgs/journal.png}
     \caption{IJWSR}
 \end{figure}
 \end{frame}
